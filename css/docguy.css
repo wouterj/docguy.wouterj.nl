@@ -2839,8 +2839,8 @@ label,
 /*------------------------------------*\
     $GENERICS
 \*------------------------------------*/
-em {
-  font-style: normal;
+strong {
+  font-weight: inherit;
   background-color: rgba(160, 212, 164, 0.7);
   color: #333; }
 
