@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS........Again, that's what you're reading
+ * OBJECTS.........Enabling/Disabling objects
+ * BRAND...........Brand stuff, color font etc.
+ */
+
+$use-markup-fix: true;
+$page-width:     1200px;
+
+
+/*------------------------------------*\
+    $OBJECTS
+\*------------------------------------*/
+$use-grids:         true;
+$use-flexbox:       false;
+$use-columns:       false;
+$use-nav:           true;
+$use-options:       false;
+$use-pagination:    false;
+$use-breadcrumb:    false;
+$use-media:         false;
+$use-marginalia:    true;
+$use-island:        false;
+$use-block-list:    false;
+$use-matrix:        false;
+$use-split:         false;
+$use-this-or-this:  false;
+$use-link-complex:  false;
+$use-flyout:        false;
+$use-arrows:        false;
+$use-sprite:        false;
+$use-icon-text:     false;
+$use-beautons:      false;
+$use-lozenges:      false;
+$use-rules:         false;
+$use-stats:         false;
+$use-greybox:       false;
+
+
+$push:              true;
+
+
+
+
+
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+$brand-color:       #a0d4a4;
+$brand-face:        "Lato", sans-serif;
+$base-font-family:  $brand-face;
+
+/**
+ * How big would you like round corners to be by default?
+ */
+$brand-round:        4px;

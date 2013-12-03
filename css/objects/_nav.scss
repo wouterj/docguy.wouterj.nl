@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+.nav__item a{
+    @include font-size(13pt);
+    color:#333;
+    text-decoration:none;
+    
+    margin-right:15px;
+}
+    .nav__item a:active{
+        color:#000;
+    }
+
+.nav__item--current a{
+    border-bottom:3px solid $brand-color;
+}

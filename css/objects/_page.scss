@@ -1,0 +1,108 @@
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+.page{
+    background:url('../img/css/background.png');
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+.page__header{
+    width:$page-width;
+    margin:0 auto;
+    padding-top:$base-spacing-unit;
+
+    &:before{
+        content:'';
+        display:block;
+        background:$brand-color;
+        width:500px;
+        height:20px;
+        
+        position:absolute;
+        top:-14px;
+        right:0;
+        
+        -webkit-transform:rotate(2deg);
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    $SUB-HEADER
+\*------------------------------------*/
+.page__sub-header{
+    background:#333;
+    padding:10px 0;
+   	overflow-x:hidden;
+    
+    color:#fff;
+    
+    position:relative;
+    
+    &:before{
+        content:'';
+        
+        display:block;
+        border:1px #777;
+        border-style:dashed none;
+        
+        position:absolute;
+        top:5px;
+        right:0;
+        bottom:5px;
+        left:0;
+    }
+}
+	.sub-header__content{
+        position:relative;
+        z-index:99;
+    }
+
+
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+.page__main{
+    width:$page-width;
+    margin:2 * $base-spacing-unit auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.page__footer{
+    position:relative;
+    height:20px;
+    overflow:hidden;
+    
+    &:before{
+        content:'';
+        display:block;
+        background:$brand-color;
+        width:500px;
+        height:20px;
+        
+        position:absolute;
+        bottom:-14px;
+        left:0;
+        
+        -webkit-transform:rotate(2deg);
+    }
+}

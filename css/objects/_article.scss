@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    $ARTICLE-LIST
+\*------------------------------------*/
+.article-list{
+    .article__time{
+        @include font-size(15pt);
+        width:100px;
+        margin-right:5px;
+        display:inline-block;
+        text-align:right;
+    }
+
+	.article__title{
+    	display:inline;
+    	font-weight:500;
+    
+    	a{
+        	color:inherit;
+        	text-decoration:inherit;
+        
+        	&:hover{
+            	text-decoration:underline;
+            }
+        }
+    }
+
+	.article__thumbnail{
+    	float:left;
+    	margin-right:10px;
+    }
+}
+.article__excerpt{
+    @include font-size(12pt);
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    $ARTICLE-META
+\*------------------------------------*/
+.article__meta{
+    margin-top:4 * $base-spacing-unit;
+    border:1px rgba($brand-color, .2);
+    border-style:solid none solid solid;
+    outline:1px solid #222;
+    
+    font-family:"Arial";
+    text-transform:uppercase;
+    @include font-size(9pt);
+    
+    dt{
+        font-weight:bold;
+        float:left;
+        clear:left;
+        width:130px;
+    }
+	dd{
+    	float:left;
+    	margin-left:$half-spacing-unit;
+	}
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+.article--single{
+    width:.625 * $page-width;
+    @include font-size(15pt);
+    font-family:"Segoe UI";
+    line-height:1.4;
+    word-spacing:3px;
+}
+
+.article{
+    h2{
+        padding-top:$base-spacing-unit;
+        
+        font-weight:normal;
+        @include font-size(24pt);
+    }
+	h3, h4{
+    	@include font-size(18pt);
+    }
+	h4{
+    	font-weight:normal;
+    }
+
+	blockquote .marginalia__body--right{
+    	border-top:3px solid $brand-color;
+    	@include font-size(15pt);
+    
+    	cite{
+        	clear:both;
+        
+        	&:before{
+            	content: '\2014 ';
+            }
+        }
+    }
+
+	blockquote.marginalia,
+    aside.marginalia{
+    	.marginalia__body--right{
+        	width:300px;
+        }
+    }
+	aside.marginalia{
+    	.marginalia__body--right{
+            left:500%;
+        }
+        h1{
+            @extend .zeta;
+    		margin-bottom:0;
+        }
+    }
+}

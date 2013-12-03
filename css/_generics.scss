@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $GENERICS
+\*------------------------------------*/
+em{
+    font-style:normal;
+    background-color:rgba($brand-color, .7);
+    color:#333;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $SELECTION
+\*------------------------------------*/
+::selection{
+    background:$brand-color;
+}
+::-moz-selection{
+    background:$brand-color;
+}

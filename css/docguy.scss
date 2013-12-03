@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENT.........That's how we call this section
+ * SETUP...........Setting up inuit.css
+ * CUSTOM..........All our custom objects
+ */
+
+
+
+
+
+/*------------------------------------*\
+	$SETUP
+\*------------------------------------*/
+@import "vars";
+@import "inuit.css/inuit";
+
+
+
+
+
+/*------------------------------------*\
+	$CUSTOM
+\*------------------------------------*/
+@import "generics";
+
+@import "objects/grids";
+@import "objects/site";
+@import "objects/page";
+@import "objects/nav";
+@import "objects/article";

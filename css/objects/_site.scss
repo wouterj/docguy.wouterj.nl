@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $SITE
+\*------------------------------------*/
+.site__logo{
+    height:100px;
+    max-width:none;
+    float:right;
+}
+
+.site__name,
+.site__slogan{
+    display:inline;
+    line-height:100px!important;
+}
+
+.site__name{
+    @include font-size(80px);
+    font-weight:400;
+    
+    a{
+        text-decoration:none;
+        color:#000;
+    }
+}
+
+.site__slogan{
+    @include font-size(40px);
+    font-weight:100;
+    
+    &:before{
+        content:'\2013 	';
+    }
+}
